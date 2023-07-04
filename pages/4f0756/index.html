@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>登录注册案例 | 凉冰的手记</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/192.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2196f3">
+    <meta name="description" content="记录生活的精彩瞬间，记录一个程序猿的成长！">
+    <meta name="keywords" content="琐事，小记">
+    <meta name="author" href="凉冰">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.59ed400b.css" as="style"><link rel="preload" href="/assets/js/app.3ee2b30c.js" as="script"><link rel="preload" href="/assets/js/2.fc657b59.js" as="script"><link rel="preload" href="/assets/js/39.66477360.js" as="script"><link rel="preload" href="/assets/js/3.e0ec9727.js" as="script"><link rel="prefetch" href="/assets/js/10.eb4f1714.js"><link rel="prefetch" href="/assets/js/100.60572966.js"><link rel="prefetch" href="/assets/js/101.d94775a6.js"><link rel="prefetch" href="/assets/js/102.354c87f2.js"><link rel="prefetch" href="/assets/js/103.0322d8d3.js"><link rel="prefetch" href="/assets/js/104.330ce470.js"><link rel="prefetch" href="/assets/js/105.f2c0cf7b.js"><link rel="prefetch" href="/assets/js/106.9b15e481.js"><link rel="prefetch" href="/assets/js/107.f83846c8.js"><link rel="prefetch" href="/assets/js/108.fd868043.js"><link rel="prefetch" href="/assets/js/109.144984d2.js"><link rel="prefetch" href="/assets/js/11.1f4ed2b0.js"><link rel="prefetch" href="/assets/js/110.393075aa.js"><link rel="prefetch" href="/assets/js/111.8e2be411.js"><link rel="prefetch" href="/assets/js/112.f5db1301.js"><link rel="prefetch" href="/assets/js/113.c5a49956.js"><link rel="prefetch" href="/assets/js/114.f7400c29.js"><link rel="prefetch" href="/assets/js/115.0d4d9691.js"><link rel="prefetch" href="/assets/js/116.5e2d0bba.js"><link rel="prefetch" href="/assets/js/117.b9b6cd5c.js"><link rel="prefetch" href="/assets/js/118.cfffe6ca.js"><link rel="prefetch" href="/assets/js/119.faeb006b.js"><link rel="prefetch" href="/assets/js/12.c55c2945.js"><link rel="prefetch" href="/assets/js/120.2c87041a.js"><link rel="prefetch" href="/assets/js/121.6d6d525b.js"><link rel="prefetch" href="/assets/js/122.a378a709.js"><link rel="prefetch" href="/assets/js/123.8a44d7e0.js"><link rel="prefetch" href="/assets/js/124.eef03f70.js"><link rel="prefetch" href="/assets/js/125.20627b3b.js"><link rel="prefetch" href="/assets/js/126.02bdd70b.js"><link rel="prefetch" href="/assets/js/127.6aaf85c7.js"><link rel="prefetch" href="/assets/js/128.2f2f6b78.js"><link rel="prefetch" href="/assets/js/129.b1f7d667.js"><link rel="prefetch" href="/assets/js/13.b5382928.js"><link rel="prefetch" href="/assets/js/130.aadb5b72.js"><link rel="prefetch" href="/assets/js/131.0a0ad3b4.js"><link rel="prefetch" href="/assets/js/132.a05a0c00.js"><link rel="prefetch" href="/assets/js/133.584b8785.js"><link rel="prefetch" href="/assets/js/134.ab61764f.js"><link rel="prefetch" href="/assets/js/135.ccae4853.js"><link rel="prefetch" href="/assets/js/136.38fdaa61.js"><link rel="prefetch" href="/assets/js/137.502d74c0.js"><link rel="prefetch" href="/assets/js/138.12a12ee7.js"><link rel="prefetch" href="/assets/js/139.5ed042c0.js"><link rel="prefetch" href="/assets/js/14.9bf49d25.js"><link rel="prefetch" href="/assets/js/140.32ffb0bc.js"><link rel="prefetch" href="/assets/js/141.3b99bc3f.js"><link rel="prefetch" href="/assets/js/142.afd3e1e7.js"><link rel="prefetch" href="/assets/js/143.ad7b5934.js"><link rel="prefetch" href="/assets/js/144.7bdbdbd9.js"><link rel="prefetch" href="/assets/js/145.3f68756b.js"><link rel="prefetch" href="/assets/js/146.a48f80c3.js"><link rel="prefetch" href="/assets/js/147.eb3a30a3.js"><link rel="prefetch" href="/assets/js/148.563f4279.js"><link rel="prefetch" href="/assets/js/149.7627333e.js"><link rel="prefetch" href="/assets/js/15.47e2fe44.js"><link rel="prefetch" href="/assets/js/150.7cf4b6fd.js"><link rel="prefetch" href="/assets/js/151.200e2d36.js"><link rel="prefetch" href="/assets/js/152.68d5a6f8.js"><link rel="prefetch" href="/assets/js/153.4019d1b1.js"><link rel="prefetch" href="/assets/js/154.7c56b873.js"><link rel="prefetch" href="/assets/js/155.8a895428.js"><link rel="prefetch" href="/assets/js/156.9a106f9c.js"><link rel="prefetch" href="/assets/js/157.b585e3f5.js"><link rel="prefetch" href="/assets/js/158.a9ffbcc1.js"><link rel="prefetch" href="/assets/js/159.9bd41101.js"><link rel="prefetch" href="/assets/js/16.709e62a0.js"><link rel="prefetch" href="/assets/js/17.b149e3eb.js"><link rel="prefetch" href="/assets/js/18.5b57a250.js"><link rel="prefetch" href="/assets/js/19.d2aedd09.js"><link rel="prefetch" href="/assets/js/20.13fd637f.js"><link rel="prefetch" href="/assets/js/21.91dc71fa.js"><link rel="prefetch" href="/assets/js/22.b44ebaaf.js"><link rel="prefetch" href="/assets/js/23.85274bf7.js"><link rel="prefetch" href="/assets/js/24.fdcf9dad.js"><link rel="prefetch" href="/assets/js/25.d7834455.js"><link rel="prefetch" href="/assets/js/26.149bb0bb.js"><link rel="prefetch" href="/assets/js/27.fe47c303.js"><link rel="prefetch" href="/assets/js/28.106a053b.js"><link rel="prefetch" href="/assets/js/29.5cbd445a.js"><link rel="prefetch" href="/assets/js/30.bc8be6db.js"><link rel="prefetch" href="/assets/js/31.776bb22e.js"><link rel="prefetch" href="/assets/js/32.38f1617c.js"><link rel="prefetch" href="/assets/js/33.764d5e8e.js"><link rel="prefetch" href="/assets/js/34.ee4b3664.js"><link rel="prefetch" href="/assets/js/35.0c8a4552.js"><link rel="prefetch" href="/assets/js/36.3114f265.js"><link rel="prefetch" href="/assets/js/37.6623c809.js"><link rel="prefetch" href="/assets/js/38.47b2ae3c.js"><link rel="prefetch" href="/assets/js/4.7bd8ec5a.js"><link rel="prefetch" href="/assets/js/40.3c1369b3.js"><link rel="prefetch" href="/assets/js/41.ba422769.js"><link rel="prefetch" href="/assets/js/42.d8feaaee.js"><link rel="prefetch" href="/assets/js/43.7a023784.js"><link rel="prefetch" href="/assets/js/44.578065d4.js"><link rel="prefetch" href="/assets/js/45.599d10a9.js"><link rel="prefetch" href="/assets/js/46.68c58a57.js"><link rel="prefetch" href="/assets/js/47.a0e48134.js"><link rel="prefetch" href="/assets/js/48.a8edc4f3.js"><link rel="prefetch" href="/assets/js/49.a98d9884.js"><link rel="prefetch" href="/assets/js/5.bc317ee9.js"><link rel="prefetch" href="/assets/js/50.7001c5b8.js"><link rel="prefetch" href="/assets/js/51.43d17700.js"><link rel="prefetch" href="/assets/js/52.9ad031a9.js"><link rel="prefetch" href="/assets/js/53.8347b740.js"><link rel="prefetch" href="/assets/js/54.73a1db12.js"><link rel="prefetch" href="/assets/js/55.06ac4334.js"><link rel="prefetch" href="/assets/js/56.caf42a7a.js"><link rel="prefetch" href="/assets/js/57.c8af04ff.js"><link rel="prefetch" href="/assets/js/58.259c0df6.js"><link rel="prefetch" href="/assets/js/59.4a73da6e.js"><link rel="prefetch" href="/assets/js/6.da0024ba.js"><link rel="prefetch" href="/assets/js/60.c88072d5.js"><link rel="prefetch" href="/assets/js/61.a3a06ae4.js"><link rel="prefetch" href="/assets/js/62.e5adc7b0.js"><link rel="prefetch" href="/assets/js/63.48cc1305.js"><link rel="prefetch" href="/assets/js/64.86f8647c.js"><link rel="prefetch" href="/assets/js/65.005e380e.js"><link rel="prefetch" href="/assets/js/66.67bff065.js"><link rel="prefetch" href="/assets/js/67.e12b4c13.js"><link rel="prefetch" href="/assets/js/68.0161e8c6.js"><link rel="prefetch" href="/assets/js/69.5aaf7b82.js"><link rel="prefetch" href="/assets/js/7.1d00dc1d.js"><link rel="prefetch" href="/assets/js/70.6a645155.js"><link rel="prefetch" href="/assets/js/71.001a3225.js"><link rel="prefetch" href="/assets/js/72.2850a293.js"><link rel="prefetch" href="/assets/js/73.d250e0c6.js"><link rel="prefetch" href="/assets/js/74.dafa5bc3.js"><link rel="prefetch" href="/assets/js/75.22c6b92e.js"><link rel="prefetch" href="/assets/js/76.24bc0a51.js"><link rel="prefetch" href="/assets/js/77.e38213b8.js"><link rel="prefetch" href="/assets/js/78.a22de10e.js"><link rel="prefetch" href="/assets/js/79.b0e7fed2.js"><link rel="prefetch" href="/assets/js/8.b16448cb.js"><link rel="prefetch" href="/assets/js/80.67472401.js"><link rel="prefetch" href="/assets/js/81.1df69f3e.js"><link rel="prefetch" href="/assets/js/82.022c9317.js"><link rel="prefetch" href="/assets/js/83.8894e626.js"><link rel="prefetch" href="/assets/js/84.e9f038d8.js"><link rel="prefetch" href="/assets/js/85.ff3971f7.js"><link rel="prefetch" href="/assets/js/86.24e53411.js"><link rel="prefetch" href="/assets/js/87.95b56dc2.js"><link rel="prefetch" href="/assets/js/88.4557cc7d.js"><link rel="prefetch" href="/assets/js/89.1337890b.js"><link rel="prefetch" href="/assets/js/9.1b8d4154.js"><link rel="prefetch" href="/assets/js/90.29d24983.js"><link rel="prefetch" href="/assets/js/91.84b2e3eb.js"><link rel="prefetch" href="/assets/js/92.23e2abeb.js"><link rel="prefetch" href="/assets/js/93.162e9b76.js"><link rel="prefetch" href="/assets/js/94.9ada79ba.js"><link rel="prefetch" href="/assets/js/95.5cc24e13.js"><link rel="prefetch" href="/assets/js/96.0ee67f9e.js"><link rel="prefetch" href="/assets/js/97.9f98bf38.js"><link rel="prefetch" href="/assets/js/98.58600000.js"><link rel="prefetch" href="/assets/js/99.f8a36889.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.59ed400b.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/恶魔.webp" alt="凉冰的手记" class="logo"> <span class="site-name can-hide">凉冰的手记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><a href="/Java-C/" class="link-title">后端</a> <span class="title" style="display:none;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/back/java/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/back/javaWeb/" class="nav-link">JavaWeb</a></li><li class="dropdown-item"><!----> <a href="/back/sql/" class="nav-link">数据库</a></li><li class="dropdown-item"><!----> <a href="/back/SSM/" class="nav-link">SSM</a></li><li class="dropdown-item"><!----> <a href="/back/SpringBoot/" class="nav-link">SpringBoot</a></li><li class="dropdown-item"><!----> <a href="/back/Microservice/" class="nav-link">微服务</a></li></ul></div></div><div class="nav-item"><a href="/Algorithm/" class="nav-link">算法</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/technology/Git/" class="nav-link">Git</a></li><li class="dropdown-item"><!----> <a href="/technology/Linux/" class="nav-link">Linux</a></li><li class="dropdown-item"><!----> <a href="/pages/b5d182/" class="nav-link">正则表达式</a></li></ul></div></div><div class="nav-item"><a href="/pages/edb686/" class="nav-link">面试</a></div><div class="nav-item"><a href="/pages/2aa63b/" class="nav-link">项目记录</a></div><div class="nav-item"><a href="/pages/1b70fb/" class="nav-link">DOA</a></div><div class="nav-item"><a href="/pages/d591da/" class="nav-link">精彩瞬间</a></div><div class="nav-item"><a href="/pages/961a83/" class="nav-link">任意门</a></div><div class="nav-item"><a href="https://github.com/diana-devil/diana-devil.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/devil.jpg"> <div class="blogger-info"><h3>凉冰</h3> <span>奋勇向前的可爱小恶魔！</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><a href="/Java-C/" class="link-title">后端</a> <span class="title" style="display:none;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/back/java/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/back/javaWeb/" class="nav-link">JavaWeb</a></li><li class="dropdown-item"><!----> <a href="/back/sql/" class="nav-link">数据库</a></li><li class="dropdown-item"><!----> <a href="/back/SSM/" class="nav-link">SSM</a></li><li class="dropdown-item"><!----> <a href="/back/SpringBoot/" class="nav-link">SpringBoot</a></li><li class="dropdown-item"><!----> <a href="/back/Microservice/" class="nav-link">微服务</a></li></ul></div></div><div class="nav-item"><a href="/Algorithm/" class="nav-link">算法</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/technology/Git/" class="nav-link">Git</a></li><li class="dropdown-item"><!----> <a href="/technology/Linux/" class="nav-link">Linux</a></li><li class="dropdown-item"><!----> <a href="/pages/b5d182/" class="nav-link">正则表达式</a></li></ul></div></div><div class="nav-item"><a href="/pages/edb686/" class="nav-link">面试</a></div><div class="nav-item"><a href="/pages/2aa63b/" class="nav-link">项目记录</a></div><div class="nav-item"><a href="/pages/1b70fb/" class="nav-link">DOA</a></div><div class="nav-item"><a href="/pages/d591da/" class="nav-link">精彩瞬间</a></div><div class="nav-item"><a href="/pages/961a83/" class="nav-link">任意门</a></div><div class="nav-item"><a href="https://github.com/diana-devil/diana-devil.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaWeb</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/7a0933/" class="sidebar-link">Filter</a></li><li><a href="/pages/3b2939/" class="sidebar-link">Listener</a></li><li><a href="/pages/36c3d1/" class="sidebar-link">Ajax</a></li><li><a href="/pages/140b55/" class="sidebar-link">Axios</a></li><li><a href="/pages/63836e/" class="sidebar-link">Json</a></li><li><a href="/pages/4f9642/" class="sidebar-link">JSP</a></li><li><a href="/pages/7250e2/" class="sidebar-link">VUE</a></li><li><a href="/pages/f1ca40/" class="sidebar-link">Element</a></li><li><a href="/pages/a450d7/" class="sidebar-link">会话技术</a></li><li><a href="/pages/4f0756/" aria-current="page" class="active sidebar-link">登录注册案例</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/4f0756/#需求分析" class="sidebar-link">需求分析</a></li><li class="sidebar-sub-header level2"><a href="/pages/4f0756/#用户登录功能" class="sidebar-link">用户登录功能</a></li><li class="sidebar-sub-header level2"><a href="/pages/4f0756/#记住我-设置cookie" class="sidebar-link">记住我-设置Cookie</a></li><li class="sidebar-sub-header level2"><a href="/pages/4f0756/#记住我-获取cookie" class="sidebar-link">记住我-获取Cookie</a></li><li class="sidebar-sub-header level2"><a href="/pages/4f0756/#用户注册功能" class="sidebar-link">用户注册功能</a></li><li class="sidebar-sub-header level2"><a href="/pages/4f0756/#验证码-展示" class="sidebar-link">验证码-展示</a></li><li class="sidebar-sub-header level2"><a href="/pages/4f0756/#验证码-校验" class="sidebar-link">验证码-校验</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>SSM</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>SpringBoot</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>微服务</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=%E5%90%8E%E7%AB%AF" title="分类" data-v-06225672>后端</a></li><li data-v-06225672><a href="/categories/?category=JavaWeb" title="分类" data-v-06225672>JavaWeb</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/diana-devil" target="_blank" title="作者" class="beLink" data-v-06225672>凉冰</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2023-06-30</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">登录注册案例<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h2 id="需求分析"><a href="#需求分析" class="header-anchor">#</a> 需求分析</h2> <p>需求说明：</p> <ol><li><p>完成用户登录功能，如果用户勾选“记住用户” ，则下次访问登录页面<strong>自动</strong>填充用户名密码</p></li> <li><p>完成注册功能，并实现<strong>验证码</strong>功能</p></li></ol> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629442826981.png" alt="1629442826981"></p> <h2 id="用户登录功能"><a href="#用户登录功能" class="header-anchor">#</a> 用户登录功能</h2> <ol><li>需求:</li></ol> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629443152010.png" alt="1629443152010"></p> <ul><li>用户登录成功后，跳转到列表页面，并在页面上展示当前登录的用户名称</li> <li>用户登录失败后，跳转回登录页面，并在页面上展示对应的错误信息</li></ul> <ol start="2"><li>实现流程分析</li></ol> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629443379531.png" alt="1629443379531"></p> <p>(1)前端通过表单发送请求和数据给Web层的LoginServlet</p> <p>(2)在LoginServlet中接收请求和数据[用户名和密码]</p> <p>(3)LoginServlet接收到请求和数据后，调用Service层完成根据用户名和密码查询用户对象</p> <p>(4)在Service层需要编写UserService类，在类中实现login方法，方法中调用Dao层的UserMapper</p> <p>(5)在UserMapper接口中，声明一个根据用户名和密码查询用户信息的方法</p> <p>(6)Dao层把数据查询出来以后，将返回数据封装到User对象，将对象交给Service层</p> <p>(7)Service层将数据返回给Web层</p> <p>(8)Web层获取到User对象后，判断User对象，如果为Null,则将错误信息响应给登录页面，如果不为Null，则跳转到列表页面，并把当前登录用户的信息存入Session携带到列表页面。</p> <ol start="3"><li>具体实现</li></ol> <p>(1)完成Dao层的代码编写</p> <p>(1.1)将<code>04-资料\1. 登录注册案例\2. MyBatis环境\UserMapper.java</code>放到com.itheima.mapper`包下:</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">UserMapper</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * 根据用户名和密码查询用户对象
+     * @param username
+     * @param password
+     * @return
+     */</span>
+    <span class="token annotation punctuation">@Select</span><span class="token punctuation">(</span><span class="token string">&quot;select * from tb_user where username = #{username} and password = #{password}&quot;</span><span class="token punctuation">)</span>
+    <span class="token class-name">User</span> <span class="token function">select</span><span class="token punctuation">(</span><span class="token annotation punctuation">@Param</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span> <span class="token class-name">String</span> username<span class="token punctuation">,</span><span class="token annotation punctuation">@Param</span><span class="token punctuation">(</span><span class="token string">&quot;password&quot;</span><span class="token punctuation">)</span>  <span class="token class-name">String</span> password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 根据用户名查询用户对象
+     * @param username
+     * @return
+     */</span>
+    <span class="token annotation punctuation">@Select</span><span class="token punctuation">(</span><span class="token string">&quot;select * from tb_user where username = #{username}&quot;</span><span class="token punctuation">)</span>
+    <span class="token class-name">User</span> <span class="token function">selectByUsername</span><span class="token punctuation">(</span><span class="token class-name">String</span> username<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 添加用户
+     * @param user
+     */</span>
+    <span class="token annotation punctuation">@Insert</span><span class="token punctuation">(</span><span class="token string">&quot;insert into tb_user values(null,#{username},#{password})&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token class-name">User</span> user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>(1.2)将<code>04-资料\1. 登录注册案例\2. MyBatis环境\User.java</code>放到<code>com.itheima.pojo</code>包下:</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token class-name">Integer</span> id<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> username<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> password<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">Integer</span> <span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> id<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setId</span><span class="token punctuation">(</span><span class="token class-name">Integer</span> id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> id<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getUsername</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> username<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setUsername</span><span class="token punctuation">(</span><span class="token class-name">String</span> username<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>username <span class="token operator">=</span> username<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> password<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setPassword</span><span class="token punctuation">(</span><span class="token class-name">String</span> password<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>password <span class="token operator">=</span> password<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;User{&quot;</span> <span class="token operator">+</span>
+                <span class="token string">&quot;id=&quot;</span> <span class="token operator">+</span> id <span class="token operator">+</span>
+                <span class="token string">&quot;, username='&quot;</span> <span class="token operator">+</span> username <span class="token operator">+</span> <span class="token char">'\''</span> <span class="token operator">+</span>
+                <span class="token string">&quot;, password='&quot;</span> <span class="token operator">+</span> password <span class="token operator">+</span> <span class="token char">'\''</span> <span class="token operator">+</span>
+                <span class="token char">'}'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>(1.3)将<code>04-资料\1. 登录注册案例\2. MyBatis环境\UserMapper.xml</code>放入到resources/com/itheima/mapper`目录下:</p> <div class="language-xml extra-class"><pre class="language-xml"><code><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
+<span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">mapper</span>
+        <span class="token name">PUBLIC</span> <span class="token string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span>
+        <span class="token string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">namespace</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>com.itheima.mapper.UserMapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mapper</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>(2)完成Service层的代码编写</p> <p>(2.1)在<code>com.itheima.service</code>包下，创建UserService类</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">UserService</span> <span class="token punctuation">{</span>
+    <span class="token comment">//1.使用工具类获取SqlSessionFactory</span>
+    <span class="token class-name">SqlSessionFactory</span> factory <span class="token operator">=</span> <span class="token class-name">SqlSessionFactoryUtils</span><span class="token punctuation">.</span><span class="token function">getSqlSessionFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">/**
+     * 登录方法
+     * @param username
+     * @param password
+     * @return
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">User</span> <span class="token function">login</span><span class="token punctuation">(</span><span class="token class-name">String</span> username<span class="token punctuation">,</span><span class="token class-name">String</span> password<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//2. 获取SqlSession</span>
+        <span class="token class-name">SqlSession</span> sqlSession <span class="token operator">=</span> factory<span class="token punctuation">.</span><span class="token function">openSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//3. 获取UserMapper</span>
+        <span class="token class-name">UserMapper</span> mapper <span class="token operator">=</span> sqlSession<span class="token punctuation">.</span><span class="token function">getMapper</span><span class="token punctuation">(</span><span class="token class-name">UserMapper</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//4. 调用方法</span>
+        <span class="token class-name">User</span> user <span class="token operator">=</span> mapper<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span>username<span class="token punctuation">,</span> password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//释放资源</span>
+        sqlSession<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span>  user<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>(3)完成页面和Web层的代码编写</p> <p>(3.1)将<code>04-资料\1. 登录注册案例\1. 静态页面</code>拷贝到项目的<code>webapp</code>目录下:</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629444649629.png" alt="1629444649629"></p> <p>(3.2)将login.html内容修改成login.jsp</p> <div class="language-jsp extra-class"><pre class="language-text"><code>&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;login&lt;/title&gt;
+    &lt;link href=&quot;css/login.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div id=&quot;loginDiv&quot; style=&quot;height: 350px&quot;&gt;
+    &lt;form action=&quot;/brand-demo/loginServlet&quot; method=&quot;post&quot; id=&quot;form&quot;&gt;
+        &lt;h1 id=&quot;loginMsg&quot;&gt;LOGIN IN&lt;/h1&gt;
+        &lt;div id=&quot;errorMsg&quot;&gt;用户名或密码不正确&lt;/div&gt;
+        &lt;p&gt;Username:&lt;input id=&quot;username&quot; name=&quot;username&quot; type=&quot;text&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;Password:&lt;input id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;Remember:&lt;input id=&quot;remember&quot; name=&quot;remember&quot; type=&quot;checkbox&quot;&gt;&lt;/p&gt;
+        &lt;div id=&quot;subDiv&quot;&gt;
+            &lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;login up&quot;&gt;
+            &lt;input type=&quot;reset&quot; class=&quot;button&quot; value=&quot;reset&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+            &lt;a href=&quot;register.html&quot;&gt;没有账号？&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><p>(3.3)创建LoginServlet类</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@WebServlet</span><span class="token punctuation">(</span><span class="token string">&quot;/loginServlet&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LoginServlet</span> <span class="token keyword">extends</span> <span class="token class-name">HttpServlet</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token class-name">UserService</span> service <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserService</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doGet</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token comment">//1. 获取用户名和密码</span>
+        <span class="token class-name">String</span> username <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> password <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;password&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   
+        <span class="token comment">//2. 调用service查询</span>
+        <span class="token class-name">User</span> user <span class="token operator">=</span> service<span class="token punctuation">.</span><span class="token function">login</span><span class="token punctuation">(</span>username<span class="token punctuation">,</span> password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//3. 判断</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>user <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">//登录成功，跳转到查询所有的BrandServlet</span>
+            
+            <span class="token comment">//将登陆成功后的user对象，存储到session</span>
+            <span class="token class-name">HttpSession</span> session <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            session<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;user&quot;</span><span class="token punctuation">,</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            
+            <span class="token class-name">String</span> contextPath <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getContextPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            response<span class="token punctuation">.</span><span class="token function">sendRedirect</span><span class="token punctuation">(</span>contextPath<span class="token operator">+</span><span class="token string">&quot;/selectAllServlet&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 登录失败,</span>
+            <span class="token comment">// 存储错误信息到request</span>
+            request<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;login_msg&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;用户名或密码错误&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 跳转到login.jsp</span>
+            request<span class="token punctuation">.</span><span class="token function">getRequestDispatcher</span><span class="token punctuation">(</span><span class="token string">&quot;/login.jsp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forward</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doPost</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">doGet</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>(3.4)在brand.jsp中</p><body>标签下添加欢迎当前用户的提示信息:<p></p> <div class="language-jsp extra-class"><pre class="language-text"><code>&lt;h1&gt;${user.username},欢迎您&lt;/h1&gt;
+</code></pre></div><p>(3.5) 修改login.jsp，将错误信息使用EL表达式来获取</p> <div class="language-jsp extra-class"><pre class="language-text"><code>修改前内容:&lt;div id=&quot;errorMsg&quot;&gt;用户名或密码不正确&lt;/div&gt;
+修改后内容: &lt;div id=&quot;errorMsg&quot;&gt;${login_msg}&lt;/div&gt;
+</code></pre></div><p>(4)启动，访问测试</p> <p>(4.1) 进入登录页面，输入错误的用户名或密码</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629445376407.png" alt="1629445376407"></p> <p>(4.2)输入正确的用户和密码信息</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629445415216.png" alt="1629445415216"></p> <p><strong>小结</strong></p> <ul><li>在LoginServlet中，将登录成功的用户数据存入session中，方法在列表页面中获取当前登录用户信息进行展示</li> <li>在LoginServlet中，将登录失败的错误信息存入到request中，如果存入到session中就会出现这次会话的所有请求都有登录失败的错误信息，这个是不需要的，所以不用存入到session中</li></ul> <h2 id="记住我-设置cookie"><a href="#记住我-设置cookie" class="header-anchor">#</a> 记住我-设置Cookie</h2> <ol><li>需求:</li></ol> <p>如果用户勾选“记住用户” ，则下次访问登陆页面自动填充用户名密码。这样可以提升用户的体验。</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629445835281.png" alt="1629445835281"></p> <p>对应上面这个需求，最大的问题就是: 如何自动填充用户名和密码?</p> <ol start="2"><li>实现流程分析</li></ol> <p>因为<code>记住我</code>功能要实现的效果是，就算用户把浏览器关闭过几天再来访问也能自动填充，所以需要将登陆信息存入一个可以长久保存，并且能够在浏览器关闭重新启动后依然有效的地方，就是我们前面讲的<strong>Cookie</strong>,所以:</p> <ul><li><p>将用户名和密码写入<strong>Cookie</strong>中，并且持久化存储Cookie,下次访问浏览器会自动携带Cookie</p></li> <li><p>在页面获取Cookie数据后，设置到用户名和密码框中</p></li> <li><p>何时写入Cookie?</p> <ul><li>用户必须登陆成功后才需要写</li> <li>用户必须在登录页面勾选了<code>记住我</code>的复选框</li></ul></li></ul> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629446248511.png" alt="1629446248511"></p> <p>(1)前端需要在发送请求和数据的时候，多携带一个用户是否勾选<code>Remember</code>的数据</p> <p>(2)LoginServlet获取到数据后，调用Service完成用户名和密码的判定</p> <p>(3)登录成功，并且用户在前端勾选了<code>记住我</code>，需要往Cookie中写入用户名和密码的数据，并设置Cookie存活时间</p> <p>(4)设置成功后，将数据响应给前端</p> <ol start="3"><li>具体实现</li></ol> <p>(1)在login.jsp为复选框设置值</p> <div class="language-jsp extra-class"><pre class="language-text"><code>&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;login&lt;/title&gt;
+    &lt;link href=&quot;css/login.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div id=&quot;loginDiv&quot; style=&quot;height: 350px&quot;&gt;
+    &lt;form action=&quot;/brand-demo/loginServlet&quot; method=&quot;post&quot; id=&quot;form&quot;&gt;
+        &lt;h1 id=&quot;loginMsg&quot;&gt;LOGIN IN&lt;/h1&gt;
+        &lt;div id=&quot;errorMsg&quot;&gt;${login_msg}&lt;/div&gt;
+        &lt;p&gt;Username:&lt;input id=&quot;username&quot; name=&quot;username&quot; type=&quot;text&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;Password:&lt;input id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;Remember:&lt;input id=&quot;remember&quot; name=&quot;remember&quot; value=&quot;1&quot; type=&quot;checkbox&quot;&gt;&lt;/p&gt;
+        &lt;div id=&quot;subDiv&quot;&gt;
+            &lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;login up&quot;&gt;
+            &lt;input type=&quot;reset&quot; class=&quot;button&quot; value=&quot;reset&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+            &lt;a href=&quot;register.html&quot;&gt;没有账号？&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><p>(2)在LoginServlet获取复选框的值并在登录成功后进行设置Cookie</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@WebServlet</span><span class="token punctuation">(</span><span class="token string">&quot;/loginServlet&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LoginServlet</span> <span class="token keyword">extends</span> <span class="token class-name">HttpServlet</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token class-name">UserService</span> service <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserService</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doGet</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token comment">//1. 获取用户名和密码</span>
+        <span class="token class-name">String</span> username <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> password <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;password&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//获取复选框数据</span>
+        <span class="token class-name">String</span> remember <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;remember&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//2. 调用service查询</span>
+        <span class="token class-name">User</span> user <span class="token operator">=</span> service<span class="token punctuation">.</span><span class="token function">login</span><span class="token punctuation">(</span>username<span class="token punctuation">,</span> password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//3. 判断</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>user <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">//登录成功，跳转到查询所有的BrandServlet</span>
+
+            <span class="token comment">//判断用户是否勾选记住我，字符串写前面是为了避免出现空指针异常</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>remember<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">//勾选了，发送Cookie</span>
+                <span class="token comment">//1. 创建Cookie对象</span>
+                <span class="token class-name">Cookie</span> c_username <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cookie</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">,</span>username<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token class-name">Cookie</span> c_password <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cookie</span><span class="token punctuation">(</span><span class="token string">&quot;password&quot;</span><span class="token punctuation">,</span>password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// 设置Cookie的存活时间</span>
+                c_username<span class="token punctuation">.</span><span class="token function">setMaxAge</span><span class="token punctuation">(</span> <span class="token number">60</span> <span class="token operator">*</span> <span class="token number">60</span> <span class="token operator">*</span> <span class="token number">24</span> <span class="token operator">*</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                c_password<span class="token punctuation">.</span><span class="token function">setMaxAge</span><span class="token punctuation">(</span> <span class="token number">60</span> <span class="token operator">*</span> <span class="token number">60</span> <span class="token operator">*</span> <span class="token number">24</span> <span class="token operator">*</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">//2. 发送</span>
+                response<span class="token punctuation">.</span><span class="token function">addCookie</span><span class="token punctuation">(</span>c_username<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                response<span class="token punctuation">.</span><span class="token function">addCookie</span><span class="token punctuation">(</span>c_password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">//将登陆成功后的user对象，存储到session</span>
+            <span class="token class-name">HttpSession</span> session <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            session<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;user&quot;</span><span class="token punctuation">,</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token class-name">String</span> contextPath <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getContextPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            response<span class="token punctuation">.</span><span class="token function">sendRedirect</span><span class="token punctuation">(</span>contextPath<span class="token operator">+</span><span class="token string">&quot;/selectAllServlet&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 登录失败,</span>
+
+            <span class="token comment">// 存储错误信息到request</span>
+            request<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;login_msg&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;用户名或密码错误&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 跳转到login.jsp</span>
+            request<span class="token punctuation">.</span><span class="token function">getRequestDispatcher</span><span class="token punctuation">(</span><span class="token string">&quot;/login.jsp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forward</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doPost</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">doGet</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>(3)启动访问测试，</p> <p>只有当前用户名和密码输入正确，并且勾选了Remeber的复选框，在响应头中才可以看得cookie的相关数据</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629447232217.png" alt="1629447232217"></p> <h2 id="记住我-获取cookie"><a href="#记住我-获取cookie" class="header-anchor">#</a> 记住我-获取Cookie</h2> <ol><li>需求</li></ol> <p>登录成功并勾选了Remeber后，后端返回给前端的Cookie数据就已经存储好了，接下来就需要在页面获取Cookie中的数据，并把数据设置到登录页面的用户名和密码框中。</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629449100282.png" alt="1629449100282"></p> <p>如何在页面直接获取Cookie中的值呢?</p> <ol start="2"><li>实现流程分析</li></ol> <p>在页面可以使用EL表达式，${cookie.<strong>key</strong>.value}</p> <p>key:指的是存储在cookie中的键名称</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629449234735.png" alt="1629449234735"></p> <p>(1)在login.jsp用户名的表单输入框使用value值给表单元素添加默认值，value可以使用<code>${cookie.username.value}</code></p> <p>(2)在login.jsp密码的表单输入框使用value值给表单元素添加默认值，value可以使用<code>${cookie.password.value}</code></p> <ol start="3"><li>具体实现</li></ol> <p>(1)修改login.jsp页面</p> <div class="language-jsp extra-class"><pre class="language-text"><code>&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;login&lt;/title&gt;
+    &lt;link href=&quot;css/login.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div id=&quot;loginDiv&quot; style=&quot;height: 350px&quot;&gt;
+    &lt;form action=&quot;/brand-demo/loginServlet&quot; method=&quot;post&quot; id=&quot;form&quot;&gt;
+        &lt;h1 id=&quot;loginMsg&quot;&gt;LOGIN IN&lt;/h1&gt;
+        &lt;div id=&quot;errorMsg&quot;&gt;${login_msg}&lt;/div&gt;
+        &lt;p&gt;Username:&lt;input id=&quot;username&quot; name=&quot;username&quot; value=&quot;${cookie.username.value}&quot; type=&quot;text&quot;&gt;&lt;/p&gt;
+
+        &lt;p&gt;Password:&lt;input id=&quot;password&quot; name=&quot;password&quot; value=&quot;${cookie.password.value}&quot; type=&quot;password&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;Remember:&lt;input id=&quot;remember&quot; name=&quot;remember&quot; value=&quot;1&quot; type=&quot;checkbox&quot;&gt;&lt;/p&gt;
+        &lt;div id=&quot;subDiv&quot;&gt;
+            &lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;login up&quot;&gt;
+            &lt;input type=&quot;reset&quot; class=&quot;button&quot; value=&quot;reset&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+            &lt;a href=&quot;register.html&quot;&gt;没有账号？&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><ol start="4"><li>访问测试，重新访问登录页面，就可以看得用户和密码已经被填充。</li></ol> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629449530886.png" alt="1629449530886"></p> <h2 id="用户注册功能"><a href="#用户注册功能" class="header-anchor">#</a> 用户注册功能</h2> <ol><li>需求</li></ol> <ul><li>注册功能：保存用户信息到数据库</li> <li>验证码功能
+<ul><li>展示验证码：展示验证码图片，并可以点击切换</li> <li>校验验证码：验证码填写不正确，则注册失败</li></ul></li></ul> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629449648793.png" alt="1629449648793"></p> <ol start="2"><li>实现流程分析</li></ol> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629449720005.png" alt="1629449720005"></p> <p>(1)前端通过表单发送请求和数据给Web层的RegisterServlet</p> <p>(2)在RegisterServlet中接收请求和数据[用户名和密码]</p> <p>(3)RegisterServlet接收到请求和数据后，调用Service层完成用户信息的保存</p> <p>(4)在Service层需要编写UserService类，在类中实现register方法，需要判断用户是否已经存在，如果不存在，则完成用户数据的保存</p> <p>(5)在UserMapper接口中，声明两个方法，一个是根据用户名查询用户信息方法，另一个是保存用户信息方法</p> <p>(6)在UserService类中保存成功则返回true，失败则返回false,将数据返回给Web层</p> <p>(7)Web层获取到结果后，如果返回的是true,则提示<code>注册成功</code>，并转发到登录页面，如果返回false则提示<code>用户名已存在</code>并转发到注册页面</p> <ol start="3"><li>具体实现</li></ol> <p>(1)Dao层代码参考资料中的内容完成</p> <p>(2)编写Service层代码</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">UserService</span> <span class="token punctuation">{</span>
+    <span class="token comment">//1.使用工具类获取SqlSessionFactory</span>
+    <span class="token class-name">SqlSessionFactory</span> factory <span class="token operator">=</span> <span class="token class-name">SqlSessionFactoryUtils</span><span class="token punctuation">.</span><span class="token function">getSqlSessionFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">/**
+     * 注册方法
+     * @return
+     */</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">register</span><span class="token punctuation">(</span><span class="token class-name">User</span> user<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//2. 获取SqlSession</span>
+        <span class="token class-name">SqlSession</span> sqlSession <span class="token operator">=</span> factory<span class="token punctuation">.</span><span class="token function">openSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//3. 获取UserMapper</span>
+        <span class="token class-name">UserMapper</span> mapper <span class="token operator">=</span> sqlSession<span class="token punctuation">.</span><span class="token function">getMapper</span><span class="token punctuation">(</span><span class="token class-name">UserMapper</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//4. 判断用户名是否存在</span>
+        <span class="token class-name">User</span> u <span class="token operator">=</span> mapper<span class="token punctuation">.</span><span class="token function">selectByUsername</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">getUsername</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>u <span class="token operator">*</span><span class="token operator">*</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">// 用户名不存在，注册</span>
+            mapper<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sqlSession<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        sqlSession<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> u <span class="token operator">*</span><span class="token operator">*</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>(3)完成页面和Web层的代码编写</p> <p>(3.1)将register.html内容修改成register.jsp</p> <div class="language-jsp extra-class"><pre class="language-text"><code>&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;欢迎注册&lt;/title&gt;
+    &lt;link href=&quot;css/register.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;form-div&quot;&gt;
+    &lt;div class=&quot;reg-content&quot;&gt;
+        &lt;h1&gt;欢迎注册&lt;/h1&gt;
+        &lt;span&gt;已有帐号？&lt;/span&gt; &lt;a href=&quot;login.html&quot;&gt;登录&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;form id=&quot;reg-form&quot; action=&quot;/brand-demo/registerServlet&quot; method=&quot;post&quot;&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;用户名&lt;/td&gt;
+                &lt;td class=&quot;inputs&quot;&gt;
+                    &lt;input name=&quot;username&quot; type=&quot;text&quot; id=&quot;username&quot;&gt;
+                    &lt;br&gt;
+                    &lt;span id=&quot;username_err&quot; class=&quot;err_msg&quot; style=&quot;display:none&quot;&gt;用户名不太受欢迎&lt;/span&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;密码&lt;/td&gt;
+                &lt;td class=&quot;inputs&quot;&gt;
+                    &lt;input name=&quot;password&quot; type=&quot;password&quot; id=&quot;password&quot;&gt;
+                    &lt;br&gt;
+                    &lt;span id=&quot;password_err&quot; class=&quot;err_msg&quot; style=&quot;display: none&quot;&gt;密码格式有误&lt;/span&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;验证码&lt;/td&gt;
+                &lt;td class=&quot;inputs&quot;&gt;
+                    &lt;input name=&quot;checkCode&quot; type=&quot;text&quot; id=&quot;checkCode&quot;&gt;
+                    &lt;img src=&quot;imgs/a.jpg&quot;&gt;
+                    &lt;a href=&quot;#&quot; id=&quot;changeImg&quot; &gt;看不清？&lt;/a&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;div class=&quot;buttons&quot;&gt;
+            &lt;input value=&quot;注 册&quot; type=&quot;submit&quot; id=&quot;reg_btn&quot;&gt;
+        &lt;/div&gt;
+        &lt;br class=&quot;clear&quot;&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><p>(3.2)编写RegisterServlet</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@WebServlet</span><span class="token punctuation">(</span><span class="token string">&quot;/registerServlet&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RegisterServlet</span> <span class="token keyword">extends</span> <span class="token class-name">HttpServlet</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token class-name">UserService</span> service <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserService</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doGet</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+       <span class="token comment">//1. 获取用户名和密码数据</span>
+        <span class="token class-name">String</span> username <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> password <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;password&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span><span class="token function">setUsername</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span><span class="token function">setPassword</span><span class="token punctuation">(</span>password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//2. 调用service 注册</span>
+        <span class="token keyword">boolean</span> flag <span class="token operator">=</span> service<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//3. 判断注册成功与否</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">{</span>
+             <span class="token comment">//注册功能，跳转登陆页面</span>
+            request<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;register_msg&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;注册成功，请登录&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            request<span class="token punctuation">.</span><span class="token function">getRequestDispatcher</span><span class="token punctuation">(</span><span class="token string">&quot;/login.jsp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forward</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">//注册失败，跳转到注册页面</span>
+
+            request<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;register_msg&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;用户名已存在&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            request<span class="token punctuation">.</span><span class="token function">getRequestDispatcher</span><span class="token punctuation">(</span><span class="token string">&quot;/register.jsp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forward</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doPost</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">doGet</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>(3.3)需要在页面上展示后台返回的错误信息，需要修改register.jsp</p> <div class="language-jsp extra-class"><pre class="language-text"><code>修改前:&lt;span id=&quot;username_err&quot; class=&quot;err_msg&quot; style=&quot;display:none&quot;&gt;用户名不太受欢迎&lt;/span&gt;
+修改后:&lt;span id=&quot;username_err&quot; class=&quot;err_msg&quot;&gt;${register_msg}&lt;/span&gt;
+</code></pre></div><p>(3.4)如果注册成功，需要把成功信息展示在登录页面，所以也需要修改login.jsp</p> <div class="language-jsp extra-class"><pre class="language-text"><code>修改前:&lt;div id=&quot;errorMsg&quot;&gt;${login_msg}&lt;/div&gt;
+修改后:&lt;div id=&quot;errorMsg&quot;&gt;${login_msg} ${register_msg}&lt;/div&gt;
+</code></pre></div><p>(3.5)修改login.jsp，将注册跳转地址修改为register.jsp</p> <div class="language-jsp extra-class"><pre class="language-text"><code>修改前：&lt;a href=&quot;register.html&quot;&gt;没有账号？&lt;/a&gt;
+修改后: &lt;a href=&quot;register.jsp&quot;&gt;没有账号？&lt;/a&gt;
+</code></pre></div><p>(3.6)启动测试，</p> <p>如果是注册的用户信息已经存在:</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629451535605.png" alt="1629451535605"></p> <p>如果注册的用户信息不存在，注册成功:</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629451567428.png" alt="1629451567428"></p> <h2 id="验证码-展示"><a href="#验证码-展示" class="header-anchor">#</a> 验证码-展示</h2> <ol><li>需求分析</li></ol> <p>展示验证码：展示验证码图片，并可以点击切换</p> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629451646831.png" alt="1629451646831"></p> <p>验证码的生成是通过工具类来实现的，具体的工具类参考</p> <p><code>04-资料\1. 登录注册案例\CheckCodeUtil.java</code></p> <p>在该工具类中编写main方法进行测试:</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+    <span class="token comment">//生成验证码的图片位置</span>
+    <span class="token class-name">OutputStream</span> fos <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileOutputStream</span><span class="token punctuation">(</span><span class="token string">&quot;d://a.jpg&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//checkCode为最终验证码的数据</span>
+    <span class="token class-name">String</span> checkCode <span class="token operator">=</span> <span class="token class-name">CheckCodeUtil</span><span class="token punctuation">.</span><span class="token function">outputVerifyImage</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> fos<span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>checkCode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>生成完验证码以后，我们就可以知晓:</p> <ul><li>验证码就是使用Java代码生成的一张图片</li> <li>验证码的作用:防止机器自动注册，攻击服务器</li></ul> <ol start="2"><li>实现流程分析</li></ol> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629452623289.png" alt="1629452623289"></p> <p>(1)前端发送请求给CheckCodeServlet</p> <p>(2)CheckCodeServlet接收到请求后，生成验证码图片，将图片用Reponse对象的输出流写回到前端</p> <p>思考:如何将图片写回到前端浏览器呢?</p> <p>(1)Java中已经有工具类生成验证码图片，测试类中只是把图片生成到磁盘上
+(2)生成磁盘的过程中使用的是OutputStream流，如何把这个图片生成在页面呢?
+(3)前面在将Reponse对象的时候，它有一个方法可以获取其字节输出流，getOutputStream()
+(4)综上所述，我们可以把写往磁盘的流对象更好成Response的字节流，即可完成图片响应给前端</p> <ol start="3"><li>具体实现</li></ol> <p>(1)修改Register.jsp页面，将验证码的图片从后台获取</p> <div class="language-jsp extra-class"><pre class="language-text"><code>&lt;tr&gt;
+    &lt;td&gt;验证码&lt;/td&gt;
+        &lt;td class=&quot;inputs&quot;&gt;
+        &lt;input name=&quot;checkCode&quot; type=&quot;text&quot; id=&quot;checkCode&quot;&gt;
+        &lt;img id=&quot;checkCodeImg&quot; src=&quot;/brand-demo/checkCodeServlet&quot;&gt;
+        &lt;a href=&quot;#&quot; id=&quot;changeImg&quot; &gt;看不清？&lt;/a&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;script&gt;
+    document.getElementById(&quot;changeImg&quot;).onclick = function () {
+       	//路径后面添加时间戳的目的是避免浏览器进行缓存静态资源
+        document.getElementById(&quot;checkCodeImg&quot;).src = &quot;/brand-demo/checkCodeServlet?&quot;+new Date().getMilliseconds();
+    }
+&lt;/script&gt;
+</code></pre></div><p>(2)编写CheckCodeServlet类，用来接收请求生成验证码</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@WebServlet</span><span class="token punctuation">(</span><span class="token string">&quot;/checkCodeServlet&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CheckCodeServlet</span> <span class="token keyword">extends</span> <span class="token class-name">HttpServlet</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doGet</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 生成验证码</span>
+        <span class="token class-name">ServletOutputStream</span> os <span class="token operator">=</span> response<span class="token punctuation">.</span><span class="token function">getOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> checkCode <span class="token operator">=</span> <span class="token class-name">CheckCodeUtil</span><span class="token punctuation">.</span><span class="token function">outputVerifyImage</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> os<span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doPost</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">doGet</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="验证码-校验"><a href="#验证码-校验" class="header-anchor">#</a> 验证码-校验</h2> <ol><li>需求</li></ol> <ul><li>判断程序生成的验证码 和 用户输入的验证码 是否一样，如果不一样，则阻止注册</li> <li>验证码图片访问和提交注册表单是<strong>两次</strong>请求，所以要将程序生成的验证码存入Session中</li></ul> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629452835571.png" alt="1629452835571"></p> <p>思考:为什么要把验证码数据存入到Session中呢?</p> <ul><li>生成验证码和校验验证码是两次请求，此处就需要在一个会话的两次请求之间共享数据</li> <li>验证码属于安全数据类的，所以我们选中Session来存储验证码数据。</li></ul> <ol start="2"><li>实现流程分析</li></ol> <p><img src="/assets/%E5%90%8E%E7%AB%AF/JavaWeb/1629452966499.png" alt="1629452966499"></p> <p>(1)在CheckCodeServlet中生成验证码的时候，将验证码数据存入Session对象</p> <p>(2)前端将验证码和注册数据提交到后台，交给RegisterServlet类</p> <p>(3)RegisterServlet类接收到请求和数据后，其中就有验证码，和Session中的验证码进行对比</p> <p>(4)如果一致，则完成注册，如果不一致，则提示错误信息</p> <ol start="3"><li>具体实现</li></ol> <p>(1)修改CheckCodeServlet类，将验证码存入Session对象</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@WebServlet</span><span class="token punctuation">(</span><span class="token string">&quot;/checkCodeServlet&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CheckCodeServlet</span> <span class="token keyword">extends</span> <span class="token class-name">HttpServlet</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doGet</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// 生成验证码</span>
+        <span class="token class-name">ServletOutputStream</span> os <span class="token operator">=</span> response<span class="token punctuation">.</span><span class="token function">getOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> checkCode <span class="token operator">=</span> <span class="token class-name">CheckCodeUtil</span><span class="token punctuation">.</span><span class="token function">outputVerifyImage</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> os<span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 存入Session</span>
+        <span class="token class-name">HttpSession</span> session <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        session<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;checkCodeGen&quot;</span><span class="token punctuation">,</span>checkCode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doPost</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">doGet</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>(2)在RegisterServlet中，获取页面的和session对象中的验证码，进行对比</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>itheima<span class="token punctuation">.</span>web</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">com<span class="token punctuation">.</span>itheima<span class="token punctuation">.</span>pojo<span class="token punctuation">.</span></span><span class="token class-name">User</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">com<span class="token punctuation">.</span>itheima<span class="token punctuation">.</span>service<span class="token punctuation">.</span></span><span class="token class-name">UserService</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">javax<span class="token punctuation">.</span>servlet<span class="token punctuation">.</span></span><span class="token class-name">ServletException</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">javax<span class="token punctuation">.</span>servlet<span class="token punctuation">.</span>annotation<span class="token punctuation">.</span></span><span class="token class-name">WebServlet</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">javax<span class="token punctuation">.</span>servlet<span class="token punctuation">.</span>http<span class="token punctuation">.</span></span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">IOException</span></span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@WebServlet</span><span class="token punctuation">(</span><span class="token string">&quot;/registerServlet&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RegisterServlet</span> <span class="token keyword">extends</span> <span class="token class-name">HttpServlet</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token class-name">UserService</span> service <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserService</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doGet</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+       <span class="token comment">//1. 获取用户名和密码数据</span>
+        <span class="token class-name">String</span> username <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> password <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;password&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span><span class="token function">setUsername</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span><span class="token function">setPassword</span><span class="token punctuation">(</span>password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 获取用户输入的验证码</span>
+        <span class="token class-name">String</span> checkCode <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span><span class="token string">&quot;checkCode&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 程序生成的验证码，从Session获取</span>
+        <span class="token class-name">HttpSession</span> session <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> checkCodeGen <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">)</span> session<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;checkCodeGen&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 比对</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>checkCodeGen<span class="token punctuation">.</span><span class="token function">equalsIgnoreCase</span><span class="token punctuation">(</span>checkCode<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+            request<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;register_msg&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;验证码错误&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            request<span class="token punctuation">.</span><span class="token function">getRequestDispatcher</span><span class="token punctuation">(</span><span class="token string">&quot;/register.jsp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forward</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 不允许注册</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">//2. 调用service 注册</span>
+        <span class="token keyword">boolean</span> flag <span class="token operator">=</span> service<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//3. 判断注册成功与否</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">{</span>
+             <span class="token comment">//注册功能，跳转登陆页面</span>
+
+            request<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;register_msg&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;注册成功，请登录&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            request<span class="token punctuation">.</span><span class="token function">getRequestDispatcher</span><span class="token punctuation">(</span><span class="token string">&quot;/login.jsp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forward</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">//注册失败，跳转到注册页面</span>
+
+            request<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;register_msg&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;用户名已存在&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            request<span class="token punctuation">.</span><span class="token function">getRequestDispatcher</span><span class="token punctuation">(</span><span class="token string">&quot;/register.jsp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forward</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doPost</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span> <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">doGet</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>至此，用户的注册登录功能就已经完成了。</p></body></div></div> <!----> <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=%E7%9F%A5%E8%AF%86" title="标签">#知识</a><a href="/tags/?tag=JavaWeb" title="标签">#JavaWeb</a></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2023 07 3</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/a450d7/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">会话技术</div></a> <a href="/pages/e5c957/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">SQL语句</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/a450d7/" class="prev">会话技术</a></span> <span class="next"><a href="/pages/e5c957/">SQL语句</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/0446de/"><div>
+            数据层解决方案
+            <!----></div></a> <span class="date">07-03</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/e76fff/"><div>
+            第三方技术整合
+            <!----></div></a> <span class="date">07-03</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/cd183e/"><div>
+            原理篇
+            <!----></div></a> <span class="date">07-03</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:1693849288@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/diana-devil" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://y.qq.com/n/ryqq/playlist/3202075040" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2023-2023
+    <span>by 凉冰 </span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><!----><!----><canvas id="vuepress-canvas-cursor"></canvas><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/bgm/G_E_M_ 邓紫棋 - FIND YOU.ogg" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="/bgm/GEM.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(/bgm/GEM.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>FIND YOU</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>G_E_M_ 邓紫棋</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div></div></div>
+    <script src="/assets/js/app.3ee2b30c.js" defer></script><script src="/assets/js/2.fc657b59.js" defer></script><script src="/assets/js/39.66477360.js" defer></script><script src="/assets/js/3.e0ec9727.js" defer></script>
+  </body>
+</html>
